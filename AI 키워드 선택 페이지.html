@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        /* 배너 스타일 */
+        .banner {
+            background-color: #ac9784;
+            text-align: center;
+            padding: 20px;
+            font-family: "궁서체", serif;
+            color: white;
+        }
+                /* 카테고리 스타일 */
+        .category {
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        /* 선 스타일 */
+        .line {
+            border-top: 1px solid black;
+            margin: 10px auto;
+            width: 80%;
+        }
+        
+        /* 작은 박스 컨테이너 스타일 */
+        .box-container {
+            background-color: #fff;
+            display: grid;
+            grid-template-columns: repeat(4, 5cm);
+            grid-gap: 10px;
+            padding: 10px;
+            justify-content: flex-end;
+        }
+        
+        /* 작은 박스 스타일 */
+        .small-box {
+            width: 5cm;
+            height: 5cm;
+            background-color: #E3DCD5;
+            border: 1px solid #E3DCD5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        /* 마지막 박스 스타일 */
+        .last-box {
+            background-color: #ac9784;
+            color: white;
+        }
+        
+        /* 텍스트 스타일 */
+        .box-text {
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            color: #000;
+        }
+        
+        /* 새로고침 버튼 스타일 */
+        .refresh-button {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        
+
+        /* 메뉴 스타일 */
+        .menu {
+            position: fixed;
+            top: 40;
+            left: 0;
+            background-color: #fff;
+            padding: 20px;
+            font-weight: bold;
+        }
+        
+        .menu-title {
+            font-weight: bold;
+        }
+        
+        .menu-item {
+            margin-bottom: 10px;
+        }
+        
+        .menu-item a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .menu-item a:hover {
+            color: #ac9784;
+        }
+        
+        .separator {
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+        }
+        
+        .main-content {
+            margin-left: 200px;
+            padding: 20px;
+        }        /* 하단 선 스타일 */
+        .footer-line {
+            border-top: 1px solid black;
+            margin: 10px auto;
+            width: 80%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1>Screen Gem_</h1>
+    </div>
+
+    <div class="menu">
+        <div class="menu-title">Screen Gem_</div>
+        <div class="menu-item"><a href="#">Movie Recommendation page</a></div>
+        <div class="separator"></div>
+        <div class="menu-item"><a href="#">Genre</a></div>
+        <div class="menu-item"><a href="#">AI Movie Recommendation</a></div>
+        <div class="menu-item"><a href="#">Domestic/International</a></div>
+        <div class="menu-item"><a href="#">Gallery</a></div>
+        <div class="menu-item"><a href="#">Community</a></div>
+        <div class="menu-item"><a href="#">Book Now</a></div>
+        <div class="menu-item"><a href="#">My Page</a></div>
+        <div class="separator"></div>
+    </div>
+    
+    <div class="main-content">
+        <div class="category">AI 추천 영화</div>
+        <div class="line"></div>
+    
+        
+        <div class="box-container">
+            <a href="#" class="small-box">
+                <span class="box-text">캠퍼스</span>
+            </a>
+            <a href="#" class="small-box">
+                <span class="box-text">가슴이 따뜻해지는</span>
+            </a>
+            <a href="#" class="small-box">
+                <span class="box-text">가족과 함께</span>
+            </a>
+            <a href="#" class="small-box">
+                <span class="box-text">연인과 함께</span>
+            </a>
+            <a href="#" class="small-box">
+                <span class="box-text">사회문제를 다루는</span>
+            </a>
+            <a href="#" class="small-box">
+                <span class="box-text">오늘의 날씨</span>
+            </a>
+            <a href="#" class="small-box">
+                <span class="box-text">펑펑 울고싶을 때</span>
+            </a>
+            <a href="#" class="small-box">
+                <span class="box-text">나만의 새벽시간</span>
+            </a>
+            <a href="#" class="small-box">
+                <span class="box-text">사랑과 웃음 동시에</span>
+            </a>
+            <a href="#" class="small-box">
+                <span class="box-text">옛 추억을 상기시키며</span>
+            </a>
+            <a href="#" class="small-box">
+                <span class="box-text">자존감 업 시켜주는</span>
+            </a>
+            <a href="#" class="small-box last-box">
+                <span class="box-text">나만의 영화</span>
+            </a>
+            <div class="refresh-button">&#x21bb;</div>
+        </div>
+        
+</body>
+</html>

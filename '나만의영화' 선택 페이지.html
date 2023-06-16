@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Screen Gem_</title>
+    <style>
+        /* 상단 배너 스타일 */
+        .banner {
+            background-color: #ac9784;
+            text-align: center;
+            padding: 20px;
+            font-family: "궁서체", serif;
+            color: white;
+        }
+        
+        /* 카테고리 스타일 */
+        .category {
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        /* 선 스타일 */
+        .line {
+            border-top: 1px solid black;
+            margin: 10px auto;
+            width: 80%;
+        }
+        
+        /* 작은 글씨 스타일 */
+        .small-text {
+            font-size: 12px;
+        }
+        
+        /* 큰 글씨 스타일 */
+        .large-text {
+            font-size: 24px;
+        }
+        
+        /* 체크박스 컨테이너 스타일 */
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        /* 메뉴 스타일 */
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            padding: 20px;
+            font-weight: bold;
+        }
+        
+        .menu-title {
+            font-weight: bold;
+        }
+        
+        .menu-item {
+            margin-bottom: 10px;
+        }
+        
+        .menu-item a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .menu-item a:hover {
+            color: #ac9784;
+        }
+        
+        .separator {
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .main-content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function redirectToLink() {
+            window.location.href = "file:///C:/Users/hseoh/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%83%88%20%ED%8F%B4%EB%8D%94/AI%20%EC%98%81%ED%99%94%EC%B6%94%EC%B2%9C%20%ED%8E%98%EC%9D%B4%EC%A7%80.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="banner">
+        <div class="large-text">Screen Gem_</div>
+    </div>
+    
+    <div class="menu">
+        <div class="menu-title">Screen Gem_</div>
+        <div class="menu-item"><a href="#">Genre</a></div>
+        <div class="menu-item"><a href="#">AI Movie Recommendation</a></div>
+        <div class="menu-item"><a href="#">Domestic/International</a></div>
+        <div class="menu-item"><a href="#">Gallery</a></div>
+        <div class="menu-item"><a href="#">Community</a></div>
+        <div class="menu-item"><a href="#">Book Now</a></div>
+        <div class="menu-item"><a href="#">My Page</a></div>
+        <div class="separator"></div>
+    </div>
+    
+    <div class="main-content">
+        <div class="category" style="background-color: #E3DCD5; padding: 10px;">
+            <div class="large-text">나만의 영화</div>
+            <p class="small-text">오늘은 어떤 하루였는지, 어떤 기분인지를 선택하면 해당 선택에 맞는 영화를 AI가 알아서 추천해줘요.</p>
+            <div class="large-text">오늘 나의 하루는...</div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="today" id="today1">
+                <label for="today1">생각대로 하루가 흘러가지 않았어요</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="today" id="today2">
+                <label for="today2">좋아하는 사람을 만났어요</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="today" id="today3">
+                <label for="today3">열심히 지냈어요</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="today" id="today4">
+                <label for="today4">좋아하는 것들로 하루를 채우고 싶어요</label>
+            </div>
+            <div class="large-text">나의 기분은...</div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="feeling" id="feeling1">
+                <label for="feeling1">로맨틱해요</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="feeling" id="feeling2">
+                <label for="feeling2">웃고싶어요</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="feeling" id="feeling3">
+                <label for="feeling3">판타지를 느끼고 싶어요</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="feeling" id="feeling4">
+                <label for="feeling4">감동을 원해요</label>
+            </div>
+            <button onclick="redirectToLink()">완료</button>
+        </div>
+    </div>
+</body>
+</html>

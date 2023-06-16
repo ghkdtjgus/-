@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.banner {
+			background-color: #ac9784;
+			text-align: center;
+			padding: 20px;
+			font-family: "궁서체", sans-serif;
+		}
+
+		.category {
+			font-weight: bold;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		.line {
+			border-bottom: 1px solid black;
+			margin-bottom: 20px;
+		}
+
+		.button {
+			background-color: #ac9784;
+			color: white;
+			padding: 10px 20px;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+
+		 .menu {
+            position: fixed;
+            top: 40;
+            left: 0;
+            background-color: #fff;
+            padding: 20px;
+            font-weight: bold;
+        }
+        
+        .menu-title {
+            font-weight: bold;
+        }
+        
+        .menu-item {
+            margin-bottom: 10px;
+        }
+        
+        .menu-item a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .menu-item a:hover {
+            color: #ac9784;
+        }
+        
+        .separator {
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+        }
+        
+        .main-content {
+            margin-left: 200px;
+            padding: 20px;
+        }        /* 하단 선 스타일 */
+        .footer-line {
+            border-top: 1px solid black;
+            margin: 10px auto;
+            width: 80%;
+        }
+
+		.grid-container {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 10px;
+			margin-top: 20px;
+		}
+
+		.grid-item {
+			border: 1px solid black;
+			padding: 10px;
+			text-align: center;
+		}
+
+		.grid-item img {
+			width: 100%;
+			height: auto;
+			max-width: 5cm;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="banner">
+		<h1>Screen Gem_</h1>
+	</div>
+ <div class="menu">
+        <div class="menu-title">Screen Gem_</div>
+        <div class="menu-item"><a href="#">Movie Recommendation page</a></div>
+        <div class="separator"></div>
+        <div class="menu-item"><a href="#">Genre</a></div>
+        <div class="menu-item"><a href="#">AI Movie Recommendation</a></div>
+        <div class="menu-item"><a href="#">Domestic/International</a></div>
+        <div class="menu-item"><a href="#">Gallery</a></div>
+        <div class="menu-item"><a href="#">Community</a></div>
+        <div class="menu-item"><a href="#">Book Now</a></div>
+        <div class="menu-item"><a href="#">My Page</a></div>
+        <div class="separator"></div>
+    </div>
+
+	<div class="category">AI 추천 영화</div>
+	<div class="line"></div>
+
+	<div class="category">캠퍼스
+		<a class="button" href="file:///C:/Users/hseoh/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%83%88%20%ED%8F%B4%EB%8D%94/AI%20%ED%82%A4%EC%9B%8C%EB%93%9C%20%EC%84%A0%ED%83%9D%20%ED%8E%98%EC%9D%B4%EC%A7%80.html">다른 추천</a>
+	</div>
+	<div class="line"></div>
+
+	<div class="grid-container">
+		<div class="grid-item">
+			<a href="file:///C:/Users/hseoh/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%83%88%20%ED%8F%B4%EB%8D%94/%EC%98%81%ED%99%94%EC%A0%95%EB%B3%B4%20%ED%8E%98%EC%9D%B4%EC%A7%80.html">
+				<img src="https://t1.daumcdn.net/movie/9cf7c93a9f3f40c7b6598ce531f087903c5a7623" alt="Image 1">
+			</a>
+		</div>
+		<div class="grid-item"><img src="https://img.hankyung.com/photo/202106/20210609093731_60c00d4b1b079_1.jpg" alt="Image 2"></div>
+		<div class="grid-item"><img src="https://talkimg.imbc.com/TVianUpload/tvian/TViews/image/2022/10/26/80e86d7f-018e-4498-a9cf-710ba6d414a7.jpg" alt="Image 1"></div>
+		<div class="grid-item"><img src="https://upload.wikimedia.org/wikipedia/ko/e/e7/%EC%97%BD%EA%B8%B0%EC%A0%81%EC%9D%B8_%EA%B7%B8%EB%85%80.jpg"></div>
+		<div class="grid-item"><img src="https://ojsfile.ohmynews.com/PHT_IMG_FILE/2015/0422/IE001822454_PHT.jpg" alt="Image 1"></div>
+		<div class="grid-item">Image 6</div>
+		<div class="grid-item">Image 7</div>
+		<div class="grid-item">Image 8</div>
+	</div>
+
+</body>
+</html>
+
+

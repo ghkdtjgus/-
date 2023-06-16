@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .banner {
+            background-color: #ac9784;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .banner-text {
+            font-family: "궁서체", serif;
+            font-size: 24px;
+        }
+
+        .category {
+            background-color: #FFFFFF;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .category-text {
+            margin: 0;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .icon-container .icon {
+            width: 10px;
+            height: 10px;
+            border: 1px solid black;
+        }
+
+        .close-button {
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .separator {
+            border: 1px solid black;
+            margin: 20px 0;
+        }
+
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+        }
+
+        .box {
+            padding: 10px;
+            border: 1px solid black;
+            background-color: #FFFFFF;
+            text-align: center;
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .arrow {
+            position: fixed;
+            top: 50%;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .arrow.left {
+            left: 10px;
+        }
+
+        .arrow.right {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-text">Screen Gem_</div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-text">스틸컷: 그 아이는 귀족</h2>
+        <div class="icon-container">
+            <div class="icon"></div>
+            <div class="close-button">&#10006;</div>
+        </div>
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="box-container">
+        <div class="box">
+            <a href="file:///C:/Users/hseoh/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%83%88%20%ED%8F%B4%EB%8D%94/%EC%98%81%ED%99%94%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%ED%99%95%EB%8C%80%20%ED%8E%98%EC%9D%B4%EC%A7%80.html">
+                <img src="https://siwff.or.kr/db/9908_db/FILM_PHOTO//m2_36f7661873d64e.jpg" alt="영화 포스터">
+            </a>
+        </div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="arrow left">&#8592;</div>
+    <div class="arrow right">&#8594;</div>
+</body>
+</html>

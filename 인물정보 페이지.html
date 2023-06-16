@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 상단 배너 스타일 */
+        .banner {
+            background-color: #ac9784;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .banner-text {
+            font-family: "궁서체", serif;
+            font-size: 24px;
+        }
+
+        /* 카테고리 스타일 */
+        .category {
+            background-color: #FFFFFF;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .category-title {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .category-line {
+            border-top: 1px solid black;
+            margin: 10px 0;
+        }
+
+        .category-content {
+            color: blue;
+        }
+
+        /* 작은 이미지 박스 스타일 */
+        .image-box-container {
+            display: flex;
+        }
+
+        .image-box {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .image-box img {
+            width: 5cm;
+            height: auto;
+        }
+
+        .image-box-title {
+            margin: 5px 0;
+        }
+
+        /* 좌측 메뉴 스타일 */
+        .menu {
+            float: left;
+            width: 200px;
+        }
+
+        .menu-title {
+            font-weight: bold;
+        }
+
+        .menu-item {
+            margin-bottom: 5px;
+        }
+
+        .menu-item a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* 구분선 스타일 */
+        .divider {
+            border-top: 1px solid black;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-text">Screen Gem_</div>
+    </div>
+
+    <div class="menu">
+        <h2 class="menu-title">Screen Gem_</h2>
+        <div class="menu-item"><a href="#">Genre</a></div>
+        <div class="menu-item"><a href="#">Al Movie Recommendation</a></div>
+        <div class="menu-item"><a href="#">Domestic/International</a></div>
+        <div class="menu-item"><a href="#">Gallery</a></div>
+        <div class="menu-item"><a href="#">Community</a></div>
+        <div class="menu-item"><a href="#">Book Now</a></div>
+        <div class="menu-item"><a href="#">My Page</a></div>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">인물 정보</h2>
+        <div class="category-line"></div>
+        <p class="category-content">카도와키 무기 (Mugi Kadowaki)</p>
+        <p>생년월일: 1992년 8월 10일 / 국적: 일본</p>
+        <p>성별: 여자 / 출생지: 일본 도쿄도</p>
+    </div>
+
+    <div class="category">
+        <h2 class="category-title">필모그래피</h2>
+        <div class="category-line"></div>
+        <div class="image-box-container">
+            <div class="image-box">
+                <img src="https://www.pointn.net/data/photos/202007/19468_26001_154.jpg" alt="Image 1">
+                <p class="image-box-title">굿바이 입술, 하루 역</p>
+            </div>
+            <!-- 다른 이미지 박스들을 추가해주세요 -->
+            <div class="image-box">
+                <img src="https://nujhrcqkiwag1408085.cdn.ntruss.com/static/upload/drama_poster_images/drama_85254_1600755838.jpg" alt="당신 차례입니다.">
+                <p class="image-box-title">당신 차례입니다, 우라베 유 역</p>
+            </div>
+            <div class="image-box">
+                <img src="https://example.com/image3.jpg" alt="Image 3">
+                <p class="image-box-title">이미지 3</p>
+            </div>
+            <div class="image-box">
+                <img src="https://example.com/image4.jpg" alt="Image 4">
+                <p class="image-box-title">이미지 4</p>
+            </div>
+            <div class="image-box">
+                <img src="https://example.com/image5.jpg" alt="Image 5">
+                <p class="image-box-title">이미지 5</p>
+            </div>
+            <div class="image-box">
+                <img src="https://example.com/image6.jpg" alt="Image 6">
+                <p class="image-box-title">이미지 6</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <script>
+        const menuItems = document.querySelectorAll('.menu-item');
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // 메뉴 클릭 시 동작할 내용을 작성해주세요.
+            });
+        });
+    </script>
+</body>
+</html>
+
